@@ -9,6 +9,8 @@ Use the package manager [pip](https://pypi.org/project/pip/) to install foobar
 pip install foobar
 ```
 ## Usage
+<span style="color:red">import</span>
+<span style="color:blue">some *blue* text</span>.
 ```
 <span style="color:red">import</span> foobar
 
