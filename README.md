@@ -3,14 +3,15 @@
 Foobar is Python library dealing with word pluralization
 
 ##Installatio
-Use the package manager <pip> to install foobar
 
-`[pip](https://pypi.org/project/pip/) install foobar`
+Use the package manager [pip](https://pypi.org/project/pip/) to install foobar
+
+`pip install foobar`
 
 ##Usage
-
->ipmort foobar
 ```
+ipmort foobar
+
 foobar.pluralize('word') #returns 'words'\
 foobar.pluralize('goose') # returns 'geese'\
 foobar.singularize('phenomena') # returns 'phenomenon'\
