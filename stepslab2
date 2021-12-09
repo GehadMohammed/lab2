@@ -1,0 +1,54 @@
+
+##Create a new project on your local machine then push it to your remote repo.
+mkdir lab2cv
+cd lab2cv
+touch stepslab2
+git init
+git remote add originlab2
+git add.
+git commit -m "main branch"
+git branch -M main
+git push originlab2 main
+
+##create two branches (dev and test) then create two files in dev branch and push this changes to remote repo.
+git branch dev
+git branch test
+
+git checkout dev
+touch file1
+touch fil2
+git add .
+git commit -m "add file1, file2 to dev branch"
+git push originlab2 dev
+
+##merge this changes on main branch and then push it to your remote main branch.
+
+git chekout main
+git merge dev
+git merge test
+git pssh originlab2 main 
+
+##Tell me how to remove them locally and remotly
+git branch -d <branch_name>
+git branch -D <branch_name>
+
+The -d option is an alias for --delete, which only deletes the branch if it has already been fully merged in its upstream branch.
+The -D option is an alias for --delete --force, which deletes the branch "irrespective of its merged status." [Source: man git-branch]
+You will receive an error if you try to delete the currently selected branch.
+
+##create an annoted tag with tagname v1.4.
+git tag -a v1.4 -m "my version 1.4"
+
+##push it to remote server.
+git push originlab2 v1.4
+
+##tell me how to list tags locally.
+git tag
+
+##tell me how to delete tag locally and remotely.
+
+remotly:
+git push --delet <remote> <tagname>
+
+locally:
+git tag -d <tagname>
