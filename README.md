@@ -10,7 +10,7 @@ pip install foobar
 ```
 ## Usage
 ```
-ipmort foobar
+<span style="color:red">import</span> foobar
 
 foobar.pluralize('<span style="color:green">word</span>') # returns 'words'
 foobar.pluralize('goose') # returns 'geese'
